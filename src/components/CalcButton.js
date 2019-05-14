@@ -25,7 +25,7 @@ class caicButton extends Component {
                     className={classes.button}
                     style={{ backgroundColor: this.props.bgcolor}}
                     onClick={() => {
-                      if(this.props.value == 'C'){
+                      if(this.props.value === 'C'){
                         return this.props.clearCalculation()
                       }
                       return this.props.updateCalculation(this.props.value, this.props.calculation, this.props.result)
